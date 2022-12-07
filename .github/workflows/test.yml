@@ -1,0 +1,15 @@
+name: Update auction winners
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl https://api.mathpang.com/auction/update-winner
+      - run: curl https://api.testmathpang.site/auction/update-winner
+      - run: curl https://api.devpang.com/auction/update-winner
+      - run: curl https://api-test-1.devpang.com/auction/update-winner
+      - run: curl https://api-test-2.devpang.com/auction/update-winner
