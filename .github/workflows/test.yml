@@ -1,6 +1,8 @@
 name: Update auction winners
 
-on: push
+on:
+  schedule:
+    - cron: '*/15 * * * *'
 
 jobs:
   cron:
