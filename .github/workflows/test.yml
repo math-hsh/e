@@ -11,5 +11,4 @@ jobs:
       - run: curl https://api.mathpang.com/auction/update-winner
       - run: curl https://api.testmathpang.site/auction/update-winner
       - run: curl https://api.devpang.com/auction/update-winner
-      - run: curl https://api-test-1.devpang.com/auction/update-winner
       - run: curl https://api-test-2.devpang.com/auction/update-winner
